@@ -70,8 +70,10 @@ El **Sistema de Alquiler de Vehículos** es una aplicación orientada al uso adm
 
 ### 🗂 diagramas para la base de datos
 Para el diseño de la base de datos se desarrolló un modelo estructurado basado en el modelo relacional, en donde se desarrollo el modelo entidad relación (ER) y el modelo relacional.
+
 ###📌 Diagrama entidad relación
 <img width="872" height="641" alt="sistema de alquiler de vehículos drawio" src="https://github.com/user-attachments/assets/0539e93c-2ad2-49b5-bd75-046387bd7640" />
+
 ###📌 Diagrama relacional
 <img width="705" height="618" alt="Sistema de alquiler de vehiculos modelo logico drawio" src="https://github.com/user-attachments/assets/efa7841e-e408-4ffe-a098-4479c8eefe05" />
 
