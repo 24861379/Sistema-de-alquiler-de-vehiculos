@@ -84,3 +84,6 @@ Para el diseño de la base de datos se desarrolló un modelo estructurado basado
 
 ### 👨‍💻 Autor
 Este proyecto fue desarrollado por **Yasmiver Alejandro Aponte Romero** para la materia de **desarrollo backend**.
+Repositorio en GitHub:  
+[Ver proyecto](https://github.com/24861379/Sistema-de-alquiler-de-vehiculos)
+
