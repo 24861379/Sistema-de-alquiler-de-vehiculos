@@ -1,0 +1,20 @@
+Azul Principal (Identidad de marca)
+#eff6ff (blue-50) - Fondos suaves
+#dbeafe (blue-100) - Fondos de tarjetas
+#2563eb (blue-600) - Botones principales ⭐
+#1d4ed8 (blue-700) - Hover de botones
+#1e40af (blue-800) - Gradientes
+Grises (Estructura)
+#ffffff (white) - Fondos de tarjetas
+#f9fafb (gray-50) - Fondo general de la app
+#f3f4f6 (gray-100) - Fondos secundarios
+#e5e7eb (gray-200) - Bordes
+#6b7280 (gray-500) - Textos secundarios
+#374151 (gray-700) - Textos principales
+#1f2937 (gray-800) - Títulos
+Estados
+Verde: #dcfce7 / #16a34a (Activo/Éxito)
+Naranja: #ffedd5 / #ea580c (Monetario)
+Púrpura: #f3e8ff / #9333ea (Especial)
+Amarillo: #fef3c7 / #92400e (Pendiente)
+Rojo: #dc2626 (Eliminar/Error)
