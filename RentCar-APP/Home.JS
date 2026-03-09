@@ -1,7 +1,7 @@
 const content = document.getElementById("content");
 
 function loadPage(pageName) {
-    const path = `secciones/${pageName}.html`;
+    const path = `/RentCar-APP/views/secciones/${pageName}.html`;
     fetch(path)
         .then(response => {
             if (!response.ok) throw new Error(`No se encotro la página`);
