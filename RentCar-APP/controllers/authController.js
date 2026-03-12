@@ -10,11 +10,13 @@ form.addEventListener("submit", async (event) => {
     const password = form.elements.Password.value;
 
     try {
-        const response = await login(email, password);
+        const response = await login({
+            email: email,
+            password: password
+        });
 
         if (response.token) {
             alert("Login exitoso");
-
             window.location.href = "./views/inicio.html";
         } else {
             alert("Credenciales incorrectas");
@@ -25,13 +27,3 @@ form.addEventListener("submit", async (event) => {
         alert("Error al iniciar sesión");
     }
 });
-/* export const loginUsuario = async (email, password) => {
-
-  const response = await login({ email, password });
-
-  if(response.token){
-    localStorage.setItem("token", response.token);
-  }
-
-  return response;
-}; */

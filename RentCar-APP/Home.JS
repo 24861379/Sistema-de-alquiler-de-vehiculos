@@ -1,7 +1,8 @@
 const content = document.getElementById("content");
 
+/* /RentCar-APP/views/secciones/ */
 function loadPage(pageName) {
-    const path = `/RentCar-APP/views/secciones/${pageName}.html`;
+    const path = `../views/secciones/${pageName}.html`;
     fetch(path)
         .then(response => {
             if (!response.ok) throw new Error(`No se encotro la página`);
@@ -15,8 +16,6 @@ function loadPage(pageName) {
             content.innerHTML = `<h2>Error 404: Página no encontrada</h2>`;
         });
 }
-
-
 
 function getCurrentPageFromHash() {
     const hash = window.location.hash.replace('#', '');
