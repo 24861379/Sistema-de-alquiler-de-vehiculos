@@ -10,9 +10,8 @@ export const login = async (data) => {
     });
     const result = await response.json();
     if (!response.ok) {
-        throw new Error(result.message || "Error en la petición");
+        throw new Error(result.message);
     }
-    /* return response.json(); */
     return result;
 }
 
