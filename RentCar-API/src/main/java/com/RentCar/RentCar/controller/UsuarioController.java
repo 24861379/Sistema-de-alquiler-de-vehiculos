@@ -23,7 +23,7 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
-    @PreAuthorize("hasAnyAuthority('ADMIN', 'AGENTE')")
+
     @PostMapping("/login")
     public LoginDtoResponse login(@RequestBody LoginDtoRequest request){
         return usuarioService.login(request.getEmail(), request.getPassword());
