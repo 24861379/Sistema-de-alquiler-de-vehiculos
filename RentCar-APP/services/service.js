@@ -1,37 +1,69 @@
-// simple in-browser storage for vehicles
+// API REST service para vehículos conectado a Backend
 const VehicleService = (() => {
-    const STORAGE_KEY = 'vehicles';
+    const API_URL = 'http://localhost:9080/api/vehiculos';
+    const TIPO_API_URL = 'http://localhost:9080/api/tipos-vehiculo';
 
-    function getAll() {
-        const data = localStorage.getItem(STORAGE_KEY);
-        return data ? JSON.parse(data) : [];
+    async function getAll() {
+        try {
+            const res = await fetch(API_URL);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        } catch (err) {
+            console.error('Error al obtener vehículos:', err);
+            return [];
+        }
     }
 
-    function saveAll(list) {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+    async function add(vehicle) {
+        try {
+            const res = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(vehicle)
+            });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        } catch (err) {
+            console.error('Error al crear vehículo:', err);
+            throw err;
+        }
     }
 
-    function add(vehicle) {
-        const list = getAll();
-        list.push(vehicle);
-        saveAll(list);
-        return vehicle;
+    async function update(id, vehicle) {
+        try {
+            const res = await fetch(`${API_URL}/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(vehicle)
+            });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        } catch (err) {
+            console.error('Error al actualizar vehículo:', err);
+            throw err;
+        }
     }
 
-    function update(index, vehicle) {
-        const list = getAll();
-        if (index < 0 || index >= list.length) throw new Error('Índice inválido');
-        list[index] = vehicle;
-        saveAll(list);
-        return vehicle;
+    async function remove(id) {
+        try {
+            const res = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        } catch (err) {
+            console.error('Error al eliminar vehículo:', err);
+            throw err;
+        }
     }
 
-    function remove(index) {
-        const list = getAll();
-        if (index < 0 || index >= list.length) throw new Error('Índice inválido');
-        list.splice(index, 1);
-        saveAll(list);
+    async function getTipos() {
+        try {
+            const res = await fetch(TIPO_API_URL);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        } catch (err) {
+            console.error('Error al obtener tipos:', err);
+            return [];
+        }
     }
 
-    return { getAll, add, update, remove };
+    return { getAll, add, update, remove, getTipos };
 })();

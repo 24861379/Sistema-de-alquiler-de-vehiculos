@@ -1,6 +1,7 @@
 package com.RentCar.RentCar.entity;
 import jakarta.persistence.*;
 import lombok.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "vehiculo")
@@ -17,7 +18,7 @@ public class VehiculoEntity {
     private Long id;
 
     // relación con tipo_vehiculo
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_tipo_vehiculo", nullable = false)
     private TipoVehiculoEntity tipoVehiculo;
 
@@ -36,8 +37,9 @@ public class VehiculoEntity {
     @Column(name = "modelo", nullable = false)
     private String modelo;
 
+    //BigDecimal para mayor precisión
     @Column(name = "costo_dia", nullable = false)
-    private Double costoDia;
+    private BigDecimal costoDia;
 
     @Column(name = "cantidad_puestos", nullable = false)
     private Integer cantidadPuestos;
