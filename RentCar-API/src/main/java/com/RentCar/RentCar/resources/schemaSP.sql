@@ -28,3 +28,22 @@ WHERE u.email = p_email;
 END
 
 ---------------------------------------------------------------------------------
+
+DROP PROCEDURE IF EXISTS sp_listar_vehiculos;
+
+CREATE PROCEDURE sp_listar_vehiculos()
+BEGIN
+SELECT
+    v.id_vehiculo,
+    v.marca,
+    v.modelo,
+    t.tipo_vehiculo AS tipo,
+    v.ano,
+    v.placa AS matricula,
+    v.cantidad_puestos AS puestos,
+    v.costo_dia AS precio_dia,
+    v.estado
+FROM vehiculo v
+         INNER JOIN tipo_vehiculo t
+                    ON v.id_tipo_vehiculo = t.id_tipo_vehiculo;
+END;
