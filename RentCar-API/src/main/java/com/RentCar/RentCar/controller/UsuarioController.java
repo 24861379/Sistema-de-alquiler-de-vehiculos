@@ -30,7 +30,7 @@ public class UsuarioController {
     }
 
 //    @SecurityRequirement(name = "bearerAuth")
-    @PreAuthorize("hasAuthority('ADMIN')")
+  //  @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/registro")
     public ResponseEntity<String> registrarUsuario(@Valid @RequestBody UsuarioDtoRequest request){
         usuarioService.registrarUsuario(request);
