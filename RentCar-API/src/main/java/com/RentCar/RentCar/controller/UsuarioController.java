@@ -29,8 +29,7 @@ public class UsuarioController {
         return usuarioService.login(request.getEmail(), request.getPassword());
     }
 
-//    @SecurityRequirement(name = "bearerAuth")
-  //  @PreAuthorize("hasAuthority('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping("/registro")
     public ResponseEntity<String> registrarUsuario(@Valid @RequestBody UsuarioDtoRequest request){
         usuarioService.registrarUsuario(request);
