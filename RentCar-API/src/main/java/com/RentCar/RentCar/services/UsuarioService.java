@@ -7,8 +7,11 @@ import com.RentCar.RentCar.repository.UsuarioRepository;
 import com.RentCar.RentCar.security.JwtUtil;
 import jakarta.persistence.NoResultException;
 import jakarta.transaction.Transactional;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UsuarioService  {
@@ -24,11 +27,14 @@ public class UsuarioService  {
 
     @Transactional
     public LoginDtoResponse login (String email, String password){
-        UsuarioEntity usuario =usuarioRepository.loginUsuario(email);
+        List<UsuarioEntity> resultado =usuarioRepository.loginUsuario(email);
+//                .orElseThrow(()-> new BadCredentialsException("Credenciales incorrectas"));
 
-            if(usuario == null){
-                throw new RuntimeException("Usuario no fue encontrado");
+            if(resultado.isEmpty()){
+                throw new BadCredentialsException("Credenciales incorrectas");
             }
+
+            UsuarioEntity usuario = resultado.get(0);
 
 
         boolean passwordCorrecto = passwordEncoder.matches(
@@ -37,7 +43,7 @@ public class UsuarioService  {
         );
 
         if(!passwordCorrecto){
-            throw new RuntimeException("Contraseña es incorrecta");
+            throw new BadCredentialsException("Credenciales incorrectas");
         }
 
         String token = jwtUtil.generateTokenWithRole(
