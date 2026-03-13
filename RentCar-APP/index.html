@@ -16,23 +16,39 @@
 <body>
     <!-- <h1>RentCar</h1> -->
     <div class="container">
-        <form>
+        <div id="alertContainer"></div>
+        <form id="loginForm">
             <div class="mb-3">
                 <label for="Email" class="form-label">Ingrese su correo electronico</label>
-                <input type="email" class="form-control" id="Email" placeholder="email@.com">
-                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                <input type="email" class="form-control" id="Email" placeholder="email@rentcar.com" required>
             </div>
             <div class="mb-3">
                 <label for="Password" class="form-label">Ingrese su contraseña</label>
-                <input type="password" class="form-control" id="Password">
+                <div class="position-relative">
+                    <input type="password" class="form-control pe-5" id="Password" required>
+                    <span id="togglePassword" class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;" aria-label="Mostrar u ocultar contraseña">
+                        <i class="fa-regular fa-eye-slash" id="eyeIcon"></i>
+                    </span>
+                </div>
+                
             </div>
-            <!-- <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-            <button type="submit" class="btn ">Ingresar</button>
+            <button type="submit" class="btn" id="loginBtn">
+                <span id="btnText">Ingresar</span>
+                <span id="loadingSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true">
+                </span>
+            </button>
         </form>
+        
     </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- scripts de la aplicación -->
+    <script src="services/service.js"></script>
+    <script src="controllers/controller.js"></script>
+    <script src="Home.js"></script>
     <script type="module" src="./controllers/authController.js"></script>
 </body>
 </html>
