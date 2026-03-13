@@ -24,7 +24,28 @@ function getCurrentPageFromHash() {
 
 function route() {
     const page = getCurrentPageFromHash();
-    loadPage(page);
+    loadPage(page).then(() => {
+        if (page === 'vehiculos' && typeof initializeVehiculos === 'function') {
+            initializeVehiculos();
+        }
+    });
+}
+
+// adjust loadPage to return promise so init can happen afterwards
+function loadPage(pageName) {
+    const path = `../views/secciones/${pageName}.html`;
+    return fetch(path)
+        .then(response => {
+            if (!response.ok) throw new Error(`No se encotro la página`);
+            return response.text();
+        })
+        .then(html => {
+            content.innerHTML = html;
+            updateActiveLink(pageName);
+        })
+        .catch(() => {
+            content.innerHTML = `<h2>Error 404: Página no encontrada</h2>`;
+        });
 }
 
 function updateActiveLink(page) {
