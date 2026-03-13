@@ -2,9 +2,12 @@
 INSERT IGNORE  INTO rol (nombre_rol) VALUES ('ADMIN');
 INSERT IGNORE  INTO rol (nombre_rol) VALUES ('AGENTE');
 
+--correo:alejo@rentcar.com
+--contraseña de alejo es: alejoren
 insert IGNORE  into usuario(email, nombre, password_hash, id_rol)
-values('alejo@.com', 'alejo','$2a$12$awZ5M6aPubCbI1S/1Rjtj.Z.3LNneZnBFwbPXx.i2LNVkzlZY27im', 1);
+values('alejo@rentcar.com', 'alejo','$2a$12$N4kBImnPCoLcUDedzfjm4ODfjcxoOzceK2LFE/KFTlLqtGh/DgmqS', 1);
 
+--correo:pepito@rentcar.com
 --contraseña de pepito es: pepitope
 insert IGNORE  into usuario(email, nombre, password_hash, id_rol)
 values('pepito@correo.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);
@@ -23,3 +26,4 @@ VALUES
     (1,'Nissan','Sentra',2021,'Disponible','STU111',50.00,5);
 --- eLIMINAR EL PRIMER VEHICULO
 DELETE FROM vehiculo WHERE placa = 'ABC123';
+values('pepito@rentcar.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);

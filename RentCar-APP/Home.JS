@@ -1,7 +1,8 @@
 const content = document.getElementById("content");
 
+/* /RentCar-APP/views/secciones/ */
 function loadPage(pageName) {
-    const path = `/RentCar-APP/views/secciones/${pageName}.html`;
+    const path = `../views/secciones/${pageName}.html`;
     fetch(path)
         .then(response => {
             if (!response.ok) throw new Error(`No se encotro la página`);
@@ -15,8 +16,6 @@ function loadPage(pageName) {
             content.innerHTML = `<h2>Error 404: Página no encontrada</h2>`;
         });
 }
-
-
 
 function getCurrentPageFromHash() {
     const hash = window.location.hash.replace('#', '');
@@ -59,46 +58,33 @@ function updateActiveLink(page) {
 window.addEventListener('hashchange', route);
 window.addEventListener('load', route);
 
-// guardar la ruta cuando se hace click en enlaces que van fuera
-/* document.addEventListener('click', (e) => {
-    const a = e.target.closest('a');
-    if (!a) return;
-    // si el link sale del SPA (ej. contiene hojaRandom.html), guardar hash actual
-    if (a.href && a.href.includes('hojaRandom.html')) {
-        sessionStorage.setItem('lastRoute', location.hash || '#ejerciciciosTeoria');
+//para controlar el menu admin
+document.addEventListener("DOMContentLoaded", () => {
+    const rol = localStorage.getItem("rol");
+    const adminMenu = document.getElementById("adminMenu");
+console.log(localStorage.getItem("rol"));
+console.log(localStorage.getItem("token"));
+    if (!adminMenu) return;
+
+    if (rol === "ADMIN") {
+        adminMenu.classList.remove("hidden");
+    } else {
+        adminMenu.classList.add("hidden");
     }
-}); */
+})
 
-// al cargar la app, si no hay hash intenta restaurar la última ruta guardada
-/* window.addEventListener('load', () => {
-    if (!location.hash) {
-        const last = sessionStorage.getItem('lastRoute');
-        if (last) location.hash = last;
-    }
-}); */
-
-/* CLONAR MENÚ EN OFFCANVAS(SIN DUPLICAR HTML) */
-/* const offcanvasElement = document.getElementById('subMenuOffcanvas');
-const mainMenu = document.getElementById('mainNavList');
-const offcanvasBody = document.getElementById('offcanvasMenu');
-
-offcanvasElement.addEventListener('show.bs.offcanvas', function () {
-    // Clonar el menú y cambiar a columna
-    const clone = mainMenu.cloneNode(true);
-    clone.classList.remove('justify-content-center');
-    clone.classList.add('flex-column');
-    clone.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.add('text-white');
+//logout
+const logoutBtn = document.getElementById("logoutBtn");
+if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("token");
+        localStorage.removeItem("rol");
+        window.location.href = "../index.html";
     });
-    offcanvasBody.innerHTML = '';
-    offcanvasBody.appendChild(clone);
-});
- */
-// Sincronizar clase "active" entre menús
-/* document.querySelectorAll('#mainNavList .nav-link').forEach(link => {
-    link.addEventListener('click', function () {
-        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-        const href = this.getAttribute('href');
-        document.querySelectorAll(`.nav-link[href="${href}"]`).forEach(l => l.classList.add('active'));
-    });
-}); */
+}
+
+const token = localStorage.getItem("token");
+
+if (!token) {
+  window.location.href = "../index.html";
+}
