@@ -10,7 +10,7 @@ values('alejo@rentcar.com', 'alejo','$2a$12$N4kBImnPCoLcUDedzfjm4ODfjcxoOzceK2LF
 --correo:pepito@rentcar.com
 --contraseña de pepito es: pepitope
 insert IGNORE  into usuario(email, nombre, password_hash, id_rol)
-values('pepito@correo.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);
+values('pepito@rentcar.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);
 
 --Meterle a la tabla datos de vehiculo
 SELECT * FROM vehiculo;
@@ -26,4 +26,4 @@ VALUES
     (1,'Nissan','Sentra',2021,'Disponible','STU111',50.00,5);
 --- eLIMINAR EL PRIMER VEHICULO
 DELETE FROM vehiculo WHERE placa = 'ABC123';
-values('pepito@rentcar.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);
+

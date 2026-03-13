@@ -33,7 +33,7 @@ function route() {
 
 // adjust loadPage to return promise so init can happen afterwards
 function loadPage(pageName) {
-    const path = `/RentCar-APP/views/secciones/${pageName}.html`;
+    const path = `../views/secciones/${pageName}.html`;
     return fetch(path)
         .then(response => {
             if (!response.ok) throw new Error(`No se encotro la página`);
