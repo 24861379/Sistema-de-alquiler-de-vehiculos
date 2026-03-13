@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1277a11-ad75-4149-beff-f7bcf7ba428c" name="Changes" comment="a">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/TipoVehiculoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/VehiculoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/TipoVehiculoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/VehiculoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/TipoVehiculoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/VehiculoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/security/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/TipoVehiculoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/VehiculoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/test/java/com/RentCar/RentCar/controller/TipoVehiculoControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/utils/ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/utils/ExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/test/java/com/RentCar/RentCar/RentCarApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/test/java/com/RentCar/RentCar/RentCarApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/Home.JS" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/Home.JS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/controllers/authController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/controllers/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/controllers/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/services/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/services/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/services/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/views/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/views/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-APP/views/secciones/vehiculos.html" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-APP/views/secciones/vehiculos.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3AlcAq932xBYtZuw4M9m9pDCzBl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in RentCar-API.executor": "Run",
+    "JUnit.RentCarApplicationTests.executor": "Run",
+    "JUnit.TipoVehiculoControllerTests.createAndList.executor": "Run",
+    "JUnit.VehiculoControllerTests.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.RentCarApplication.executor": "Run",
+    "git-widget-placeholder": "Merging Nicole-backend",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.RentCarApplication">
+    <configuration name="All in RentCar-API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RentCar-API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RentCarApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RentCar-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.RentCar.RentCar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.RentCar.RentCar" />
+      <option name="MAIN_CLASS_NAME" value="com.RentCar.RentCar.RentCarApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TipoVehiculoControllerTests.createAndList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RentCar-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.RentCar.RentCar.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.RentCar.RentCar.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.RentCar.RentCar.controller.TipoVehiculoControllerTests" />
+      <option name="METHOD_NAME" value="createAndList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehiculoControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RentCar-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.RentCar.RentCar.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.RentCar.RentCar.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.RentCar.RentCar.controller.VehiculoControllerTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RentCarApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <module name="RentCar-API" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.RentCar.RentCar.RentCarApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in RentCar-API" />
+      <item itemvalue="JUnit.RentCarApplicationTests" />
+      <item itemvalue="JUnit.TipoVehiculoControllerTests.createAndList" />
+      <item itemvalue="JUnit.VehiculoControllerTests" />
+      <item itemvalue="Spring Boot.RentCarApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in RentCar-API" />
+        <item itemvalue="JUnit.VehiculoControllerTests" />
+        <item itemvalue="JUnit.RentCarApplicationTests" />
+        <item itemvalue="JUnit.TipoVehiculoControllerTests.createAndList" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1277a11-ad75-4149-beff-f7bcf7ba428c" name="Changes" comment="" />
+      <created>1773170459376</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773170459376</updated>
+      <workItem from="1773170464798" duration="9962000" />
+      <workItem from="1773184361328" duration="1699000" />
+      <workItem from="1773253422561" duration="4478000" />
+      <workItem from="1773277376917" duration="3225000" />
+      <workItem from="1773280748775" duration="4622000" />
+      <workItem from="1773286862347" duration="72000" />
+      <workItem from="1773286956788" duration="1532000" />
+      <workItem from="1773355136414" duration="1618000" />
+      <workItem from="1773356980550" duration="1281000" />
+      <workItem from="1773358469737" duration="3331000" />
+    </task>
+    <task id="LOCAL-00001" summary="a">
+      <option name="closed" value="true" />
+      <created>1773360063535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773360063535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Sistema_de_alquiler_de_vehiculos$RentCarApplication.ic" NAME="RentCarApplication Coverage Results" MODIFIED="1773254023009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
