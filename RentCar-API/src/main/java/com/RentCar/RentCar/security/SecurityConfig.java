@@ -34,10 +34,17 @@ public class SecurityConfig {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 )
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/usuario/login").permitAll()
-                        .requestMatchers("/usuario/registro").permitAll()
-                        .requestMatchers("/api/vehiculos/**").permitAll()
-                        .requestMatchers("/api/tipos-vehiculo/**").permitAll()
+                        .requestMatchers(
+                                "/usuario/login",
+                                "/usuario/registro",
+
+                                "/swagger-ui/**",
+                                "/v3/api-docs/**",
+                                "/swagger-ui.html",
+
+                                "/api/vehiculos/**",
+                                "/api/tipos-vehiculo/**"
+                        ).permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
