@@ -3,7 +3,7 @@ const content = document.getElementById("content");
 /* /RentCar-APP/views/secciones/ */
 function loadPage(pageName) {
     const path = `../views/secciones/${pageName}.html`;
-    fetch(path)
+    return fetch(path)
         .then(response => {
             if (!response.ok) throw new Error(`No se encotro la página`);
             return response.text();
@@ -31,23 +31,6 @@ function route() {
     });
 }
 
-// adjust loadPage to return promise so init can happen afterwards
-function loadPage(pageName) {
-    const path = `/RentCar-APP/views/secciones/${pageName}.html`;
-    return fetch(path)
-        .then(response => {
-            if (!response.ok) throw new Error(`No se encotro la página`);
-            return response.text();
-        })
-        .then(html => {
-            content.innerHTML = html;
-            updateActiveLink(pageName);
-        })
-        .catch(() => {
-            content.innerHTML = `<h2>Error 404: Página no encontrada</h2>`;
-        });
-}
-
 function updateActiveLink(page) {
     document.querySelectorAll('.sidebar-link').forEach(link => {
         const target = link.getAttribute('href').replace('#', '');
@@ -56,7 +39,11 @@ function updateActiveLink(page) {
 }
 
 window.addEventListener('hashchange', route);
-window.addEventListener('load', route);
+window.addEventListener('load', () => {
+    if (document.getElementById("content")) {
+        route();
+    }
+});
 
 //para controlar el menu admin
 document.addEventListener("DOMContentLoaded", () => {
@@ -71,9 +58,19 @@ console.log(localStorage.getItem("token"));
     } else {
         adminMenu.classList.add("hidden");
     }
+
+    //logout
+    const logoutBtn = document.getElementById("logoutBtn");
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("token");
+            localStorage.removeItem("rol");
+            window.location.href = "../index.html";
+    });
+}
 })
 
-//logout
+/* //logout
 const logoutBtn = document.getElementById("logoutBtn");
 if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
@@ -81,10 +78,10 @@ if (logoutBtn) {
         localStorage.removeItem("rol");
         window.location.href = "../index.html";
     });
-}
+} */
 
 const token = localStorage.getItem("token");
 
-if (!token) {
-  window.location.href = "../index.html";
+if (!token && window.location.pathname !== '/index.html') {
+  window.location.href = "./index.html";
 }
