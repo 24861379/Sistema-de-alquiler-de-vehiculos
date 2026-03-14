@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1277a11-ad75-4149-beff-f7bcf7ba428c" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,32 +40,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.All in RentCar-API.executor": "Run",
-    "JUnit.RentCarApplicationTests.executor": "Run",
-    "JUnit.TipoVehiculoControllerTests.createAndList.executor": "Run",
-    "JUnit.VehiculoControllerTests.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.RentCarApplication.executor": "Run",
-    "git-widget-placeholder": "Kev-backend",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kevvr/Downloads/6to Semestre/Backend/Sistema-de-alquiler-de-vehiculos",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in RentCar-API.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RentCarApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipoVehiculoControllerTests.createAndList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VehiculoControllerTests.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RentCarApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Kev-backend&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kevvr/Downloads/6to Semestre/Backend/Sistema-de-alquiler-de-vehiculos&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.RentCarApplication">
     <configuration name="All in RentCar-API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RentCar-API" />
@@ -174,7 +172,8 @@
       <workItem from="1773356980550" duration="1281000" />
       <workItem from="1773358469737" duration="4478000" />
       <workItem from="1773369958909" duration="45000" />
-      <workItem from="1773370210218" duration="705000" />
+      <workItem from="1773370210218" duration="1581000" />
+      <workItem from="1773450839718" duration="1764000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />

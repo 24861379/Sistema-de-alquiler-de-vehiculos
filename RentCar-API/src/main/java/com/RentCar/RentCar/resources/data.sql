@@ -53,7 +53,7 @@ VALUES
 DELETE FROM vehiculo WHERE placa = 'ABC123';
 values('pepito@rentcar.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);
 
--- Ver datos de vehiculo junto con los datos del tipo de vehiculo
+-- Ver datos de vehiculo junto con los datos del tipo de vehiculo.
 SELECT v.*, t.tipo_vehiculo
 FROM vehiculo v
          JOIN tipo_vehiculo t
