@@ -1,0 +1,28 @@
+body{
+    background-color: #dbeafe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    border: #ffffff 1px solid;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 400px;
+}
+
+.btn{
+    background-color: #2563eb;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    width: 180px;
+}
+
+.btn:hover{
+    background-color: #1e40af;
+    color: #ffffff; 
+}

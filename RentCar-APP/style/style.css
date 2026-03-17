@@ -131,3 +131,7 @@ a {
     background-color: #d97706;
 }
 
+/* ocultar menu admin */
+.hidden {
+    display: none;
+}
