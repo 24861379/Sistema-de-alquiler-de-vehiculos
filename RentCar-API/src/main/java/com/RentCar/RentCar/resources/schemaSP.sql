@@ -47,3 +47,17 @@ FROM vehiculo v
          INNER JOIN tipo_vehiculo t
                     ON v.id_tipo_vehiculo = t.id_tipo_vehiculo;
 END;
+
+--------------------------------------------------------------------
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_clientes`(
+in nombreCliente varchar(50),
+in apellidoCliente varchar(50),
+in correo varchar(20),
+in telefono varchar(10),
+in direccion varchar(50)
+)
+BEGIN
+insert into cliente(apellido_cliente, direccion, email, nombre_cliente, telefono)
+values(apellidoCliente, direccion, correo, nombreCliente, telefono);
+END
