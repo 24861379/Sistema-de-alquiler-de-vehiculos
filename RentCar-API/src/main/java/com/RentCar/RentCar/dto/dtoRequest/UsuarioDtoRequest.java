@@ -12,7 +12,7 @@ import lombok.Setter;
 public class UsuarioDtoRequest {
     @NotBlank(message = "El nombre es obligatorio")
     private String nombre;
-    @Email(message = "Correo no valido")
+    @Email(message = "Correo no válido")
     private String email;
     @Size(min = 8, message = "La contraseña debe tener al menos 8 caracteres")
     private String password;

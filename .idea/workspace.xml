@@ -74,7 +74,7 @@
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.RentCarApplication">
     <configuration name="All in RentCar-API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RentCar-API" />
