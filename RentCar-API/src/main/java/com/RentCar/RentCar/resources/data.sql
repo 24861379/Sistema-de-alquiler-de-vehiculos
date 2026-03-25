@@ -12,8 +12,33 @@ values('alejo@rentcar.com', 'alejo','$2a$12$N4kBImnPCoLcUDedzfjm4ODfjcxoOzceK2LF
 insert IGNORE  into usuario(email, nombre, password_hash, id_rol)
 values('pepito@rentcar.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);
 
---Meterle a la tabla datos de vehiculo
-SELECT * FROM vehiculo;
+-- Crear tabala tipo de vehiculo
+CREATE TABLE tipo_vehiculo (
+                               id_tipo_vehiculo INT PRIMARY KEY AUTO_INCREMENT,
+                               tipo_vehiculo VARCHAR(50) NOT NULL
+);
+-- Insertar tipos de vehículo
+INSERT INTO tipo_vehiculo (tipo_vehiculo) VALUES
+                                              ('Sedán'),
+                                              ('SUV'),
+                                              ('Pickup'),
+                                              ('Hatchback'),
+                                              ('Camioneta');
+-- Crear tabla de vehículos
+CREATE TABLE vehiculo (
+                          id_vehiculo INT PRIMARY KEY AUTO_INCREMENT,
+                          id_tipo_vehiculo INT,
+                          marca VARCHAR(50),
+                          modelo VARCHAR(50),
+                          ano INT,
+                          estado VARCHAR(20),
+                          placa VARCHAR(10),
+                          costo_dia DECIMAL(10,2),
+                          cantidad_puestos INT,
+                          FOREIGN KEY (id_tipo_vehiculo) REFERENCES tipo_vehiculo(id_tipo_vehiculo)
+);
+
+-- Insertar vehículos
 INSERT INTO vehiculo
 (id_tipo_vehiculo, marca, modelo, ano, estado, placa, costo_dia, cantidad_puestos)
 VALUES
@@ -26,4 +51,10 @@ VALUES
     (1,'Nissan','Sentra',2021,'Disponible','STU111',50.00,5);
 --- eLIMINAR EL PRIMER VEHICULO
 DELETE FROM vehiculo WHERE placa = 'ABC123';
+values('pepito@rentcar.com', 'pepito Perez','$2a$10$/rjcS8D08RtoJbcsG3wzaOfCztIaMl8z9guOrspe4xoHWaZUoRSwa', 2);
 
+-- Ver datos de vehiculo junto con los datos del tipo de vehiculo.
+SELECT v.*, t.tipo_vehiculo
+FROM vehiculo v
+         JOIN tipo_vehiculo t
+              ON v.id_tipo_vehiculo = t.id_tipo_vehiculo;

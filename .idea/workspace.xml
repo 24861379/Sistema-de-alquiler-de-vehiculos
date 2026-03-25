@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1277a11-ad75-4149-beff-f7bcf7ba428c" name="Changes" comment="a">
-      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/VehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/VehiculoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/CrearClienteDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/ClienteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/test/java/com/RentCar/RentCar/controller/TipoVehiculoControllerTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -56,15 +63,18 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.RentCarApplication.executor": "Run",
-    "git-widget-placeholder": "Kev-backend",
+    "git-widget-placeholder": "Nicole-backend",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.RentCarApplication">
     <configuration name="All in RentCar-API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RentCar-API" />
@@ -170,6 +180,7 @@
       <workItem from="1773355136414" duration="1618000" />
       <workItem from="1773356980550" duration="1281000" />
       <workItem from="1773358469737" duration="3331000" />
+      <workItem from="1773449993695" duration="4902000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />

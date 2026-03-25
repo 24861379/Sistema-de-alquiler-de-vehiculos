@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ModalAgregarVehiculo from "../components/ModalAgregarVehiculo";
 import ModalEditarVehiculo from "../components/ModalEditarVehiculo";
 import VehiculoService from "../services/VehiculoService";
-
+import VehicleService from "../services/VehiculoService";
 function Vehiculos() {
   const [vehiculos, setVehiculos] = useState([]);
     const [tipos, setTipos] = useState([]);
