@@ -21,6 +21,9 @@ public class ClienteEntity {
     @Column(name = "apellido_cliente", nullable = false)
     private String apellidoCliente;
 
+    @Column(name = "documento", nullable = false, unique = true)
+    private String documento;
+
     @Column(unique = true)
     private String email;
 

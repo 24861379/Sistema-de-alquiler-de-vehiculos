@@ -27,8 +27,10 @@
       <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/ClienteRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/ClienteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentCar-API/src/test/java/com/RentCar/RentCar/controller/TipoVehiculoControllerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/CrearClienteDtoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/CrearClienteDtoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/ClienteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/ClienteEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/ClienteService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,14 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RentCarApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Nicole-backend&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
@@ -227,6 +237,10 @@
       <workItem from="1773450631013" duration="51000" />
       <workItem from="1774486411047" duration="4110000" />
       <workItem from="1773449993695" duration="4902000" />
+      <workItem from="1773797767673" duration="1476000" />
+      <workItem from="1774496476409" duration="1220000" />
+      <workItem from="1774580040963" duration="26000" />
+      <workItem from="1774580291723" duration="6141000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
