@@ -15,6 +15,9 @@ public class CrearClienteDtoRequest {
     @NotBlank(message = "Apellido obligatorio")
     private String apellidoCliente;
 
+    @NotBlank(message = "Documento obligatorio")
+    private String documento;
+
     @Email(message = "Correo no válido")
     private String email;
 
