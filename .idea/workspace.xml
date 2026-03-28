@@ -21,6 +21,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RentCar-API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/CrearClienteDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/ClienteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/resources/schemaSP.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RentCar-API/src/test/java/com/RentCar/RentCar/controller/TipoVehiculoControllerTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +90,31 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in RentCar-API.executor": "Run",
+    "JUnit.RentCarApplicationTests.executor": "Run",
+    "JUnit.TipoVehiculoControllerTests.createAndList.executor": "Run",
+    "JUnit.VehiculoControllerTests.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.RentCarApplication.executor": "Run",
+    "git-widget-placeholder": "Nicole-backend",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }</component>
   <component name="RunManager" selected="Spring Boot.RentCarApplication">
@@ -194,6 +226,7 @@
       <workItem from="1773448782998" duration="634000" />
       <workItem from="1773450631013" duration="51000" />
       <workItem from="1774486411047" duration="4110000" />
+      <workItem from="1773449993695" duration="4902000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
