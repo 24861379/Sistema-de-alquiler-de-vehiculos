@@ -13,8 +13,6 @@ public class ExceptionHandler {
     //para credenciales incorrectas
     @org.springframework.web.bind.annotation.ExceptionHandler(BadCredentialsException.class)
     public ResponseEntity<Map<String, String>> handlerRuntimeException(BadCredentialsException ex){
-//        Map<String, String> error = new HashMap<>();
-//        error.put("error", ex.getMessage());
 
         return ResponseEntity
                 .status(HttpStatus.UNAUTHORIZED)

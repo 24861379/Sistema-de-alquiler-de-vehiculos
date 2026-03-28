@@ -27,22 +27,23 @@ public class PagoEntity {
     @JoinColumn(name = "id_alquiler")
     @JsonIgnore
     private AlquilerEntity alquiler;
-    @Column
+
+    @Column(name="numero_factura")
     private String numero_factura;
 
-    @Column
+    @Column(name="metodo_pago")
     private String metodo_pago;
 
-    @Column
+    @Column(name="estado")
     private boolean estado;
 
-    @Column
+    @Column(name="fecha_pago")
     private LocalDate fecha_pago;
 
-    @Column
+    @Column(name="subtotal")
     private double subtotal;
 
-    @Column
+    @Column(name="total")
     private double total;
 
 
