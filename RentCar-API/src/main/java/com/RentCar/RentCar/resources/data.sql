@@ -58,3 +58,35 @@ SELECT v.*, t.tipo_vehiculo
 FROM vehiculo v
          JOIN tipo_vehiculo t
               ON v.id_tipo_vehiculo = t.id_tipo_vehiculo;
+
+--Insert de cliente
+INSERT INTO cliente (nombre_cliente, apellido_cliente, documento, email, telefono, direccion)
+VALUES ('Carlos', 'Ramírez', '1001234567', 'carlos.ramirez@gmail.com', '3001234567', 'Bogotá');
+
+INSERT INTO cliente (nombre_cliente, apellido_cliente, documento, email, telefono, direccion)
+VALUES ('Laura', 'Gómez', '1002345678', 'laura.gomez@gmail.com', '3012345678', 'Medellín');
+
+INSERT INTO cliente (nombre_cliente, apellido_cliente, documento, email, telefono, direccion)
+VALUES ('Andrés', 'Martínez', '1003456789', 'andres.martinez@gmail.com', '3023456789', 'Cali');
+
+INSERT INTO cliente (nombre_cliente, apellido_cliente, documento, email, telefono, direccion)
+VALUES ('Sofía', 'Hernández', '1004567890', 'sofia.hernandez@gmail.com', '3034567890', 'Barranquilla');
+
+INSERT INTO cliente (nombre_cliente, apellido_cliente, documento, email, telefono, direccion)
+VALUES ('Juan', 'Pérez', '1005678901', 'juan.perez@gmail.com', '3045678901', 'Cartagena');
+
+--Insert de pago
+INSERT INTO pago (numero_factura,metodo_pago,estado,fecha_pago,subtotal,total)
+VALUES
+    ( 'FAC-001', 'Tarjeta', true, '2026-03-01', 10.000, 11.900),
+    ( 'FAC-002', 'Efectivo', true, '2026-03-05', 20.000, 23.800),
+    ( 'FAC-003', 'Transferencia', false, '2026-03-10', 15.000, 17.850);
+
+--Insert de alquiler
+INSERT INTO alquiler (fecha_inicio, fecha_fin, estado_alquiler)
+VALUES
+    ('2026-01-10', '2026-01-15', 1),
+    ('2026-02-01', '2026-02-05', 0),
+    ('2026-03-12', '2026-03-20', 1),
+    ('2026-04-01', '2026-04-10', 1),
+    ('2026-05-05', '2026-05-08', 0);
