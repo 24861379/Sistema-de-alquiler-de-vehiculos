@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1277a11-ad75-4149-beff-f7bcf7ba428c" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/ActualizarClienteDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Sistema-de-alquiler-de-vehiculos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/AlquilerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/PagoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/AlquilerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/PagoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/AlquilerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/PagoRepositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/AlquilerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/PagoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/CrearClienteDtoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/entity/ClienteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/services/ClienteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/CrearClienteDtoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/RentCar-API/src/main/java/com/RentCar/RentCar/dto/dtoRequest/CrearClienteDtoRequest.java" afterDir="false" />
@@ -66,11 +86,45 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RentCarApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Felipe-Backend&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bohor/OneDrive/Documents/Sistema-de-alquiler-de-vehiculos&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in RentCar-API.executor": "Run",
+    "JUnit.RentCarApplicationTests.executor": "Run",
+    "JUnit.TipoVehiculoControllerTests.createAndList.executor": "Run",
+    "JUnit.VehiculoControllerTests.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.RentCarApplication.executor": "Run",
+    "git-widget-placeholder": "Nicole-backend",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }</component>
   <component name="RunManager" selected="Spring Boot.RentCarApplication">
@@ -178,6 +232,10 @@
       <workItem from="1773355136414" duration="1618000" />
       <workItem from="1773356980550" duration="1281000" />
       <workItem from="1773358469737" duration="3331000" />
+      <workItem from="1773366946051" duration="8377000" />
+      <workItem from="1773448782998" duration="634000" />
+      <workItem from="1773450631013" duration="51000" />
+      <workItem from="1774486411047" duration="4110000" />
       <workItem from="1773449993695" duration="4902000" />
       <workItem from="1773797767673" duration="1476000" />
       <workItem from="1774496476409" duration="1220000" />

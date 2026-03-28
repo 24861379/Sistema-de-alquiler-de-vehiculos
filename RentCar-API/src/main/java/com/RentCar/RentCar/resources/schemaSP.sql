@@ -28,7 +28,46 @@ WHERE u.email = p_email;
 END
 
 ---------------------------------------------------------------------------------
+DROP PROCEDURE IF EXISTS sp_obtener_usuarios;
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_obtener_usuarios`()
+BEGIN
+SELECT
+    u.id_usuario,
+    u.nombre,
+    u.email,
+    r.nombre_rol
+FROM usuario u
+         INNER JOIN rol r ON u.id_rol = r.id_rol;
+END
+--------------------------------------------------------------------------------------
+DROP PROCEDURE IF EXISTS sp_actualizar_usuario;
+
+CREATE PROCEDURE `sp_actualizar_usuario` (
+    in usuarioId INT,
+    in rolId INT
+)
+BEGIN
+update usuario
+set id_rol = rolId
+where id_usuario = usuarioId;
+
+END
+
+--------------------------------------------------------------------------------------
+DROP PROCEDURE IF EXISTS sp_eliminar_usuario;
+
+CREATE PROCEDURE `sp_eliminar_usuario` (
+    In usuario_id INT
+)
+BEGIN
+delete from usuario
+where id_usuario = usuario_id;
+END
+
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
 DROP PROCEDURE IF EXISTS sp_listar_vehiculos;
 
 CREATE PROCEDURE sp_listar_vehiculos()
